@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquete de Eventos - Salón de Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .package {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .package h2 {
+            color: #4CAF50;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #FF5722;
+        }
+        .back-to-top {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">Salón de Eventos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Paquete de Eventos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center" id="inicio">Paquete de Eventos</h1>
+        <div class="package">
+            <h2>Paquete Completo de Eventos</h2>
+            <p>Incluye:</p>
+            <ul>
+                <li>Decoración temática personalizada</li>
+                <li>Servicio de catering gourmet</li>
+                <li>Fotografía y videografía profesional</li>
+                <li>Música en vivo (banda o DJ)</li>
+                <li>Coordinación de eventos</li>
+                <li>Souvenirs personalizados para los invitados</li>
+            </ul>
+            <p class="price">$15,000 MXN</p>
+        </div>       
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts de JavaScript agregados -->
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["email"].value;
+            if (x == "") {
+                alert("El campo de correo electrónico debe ser llenado.");
+                return false;
+            }
+        }
+
+        function showAlert() {
+            alert("¡Botón clicado!");
+        }
+
+        function changeContent() {
+            document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+        }
+
+        function mouseOver() {
+            document.getElementById("hoverText").style.color = "red";
+        }
+
+        function mouseOut() {
+            document.getElementById("hoverText").style.color = "black";
+        }
+    </script>
+</body>
+</html>

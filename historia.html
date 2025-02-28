@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia - Salón de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Quienes Somos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="historia.html">Historia</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Nuestra Historia</h1>
+    <p>El <strong>Salón de Eventos El Ing</strong> nació hace más de 15 años con el sueño de ofrecer un espacio exclusivo para la celebración de momentos inolvidables. Lo que comenzó como un pequeño proyecto familiar, con el tiempo se convirtió en uno de los lugares más reconocidos para la organización de eventos en la región.</p>
+    
+    <h2>Fundación</h2>
+    <p>En el año 2008, nuestra familia decidió crear un espacio donde las personas pudieran reunirse para festejar los momentos más importantes de sus vidas. Con esfuerzo y dedicación, logramos construir un lugar acogedor, con instalaciones de primera calidad.</p>
+    
+    <h2>Crecimiento y Expansión</h2>
+    <p>A medida que más personas confiaban en nuestros servicios, ampliamos nuestras instalaciones y mejoramos cada detalle para ofrecer un servicio de excelencia. Incorporamos un equipo de profesionales en catering, decoración y organización de eventos para brindar experiencias únicas.</p>
+    
+    <h2>El Presente</h2>
+    <p>Hoy en día, <strong>Salón de Eventos El Ing</strong> es sinónimo de calidad y elegancia. Seguimos innovando para garantizar que cada evento sea especial y memorable, cumpliendo con las expectativas de nuestros clientes.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("¡Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Estilos para títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+}
+
+/* Estilos para el contenido */
+p, li, span, div {
+  color: green;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Estilos para el fondo */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('C:/Users/ayvar/Documents/Universidad del Sur/Quinto Semestre/Tareas en proceso/tareas en proceso/Semana 6 Programacion Web/proyecto/img/fondo1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

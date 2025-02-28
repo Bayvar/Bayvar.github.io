@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Mejores Lugares - Salón de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 800px;
+    }
+    .lugar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+          <li class="nav-item"><a class="nav-link active" href="mejores_lugares.html">Los Mejores Lugares</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Los Mejores Lugares para tu Evento</h1>
+    <p>En <strong>Salón de Eventos El Ing</strong>, seleccionamos los mejores espacios para que tu celebración sea espectacular. Contamos con ubicaciones exclusivas adaptadas a todo tipo de eventos.</p>
+    
+    <div class="row">
+      <div class="col-md-6 lugar">
+        <img src="img/lugar_premium1.jpeg" alt="Salón de Lujo">
+        <h4 class="text-center">Salón de Lujo</h4>
+        <p>Un espacio sofisticado con decoración moderna y tecnología de última generación para eventos exclusivos.</p>
+      </div>
+      <div class="col-md-6 lugar">
+        <img src="img/lugar_premium2.jpeg" alt="Jardín Exclusivo">
+        <h4 class="text-center">Jardín Exclusivo</h4>
+        <p>Un hermoso jardín rodeado de naturaleza, perfecto para bodas y eventos al aire libre.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("¡Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

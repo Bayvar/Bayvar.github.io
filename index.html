@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú con Links - Eventos El Ing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .event-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .event-image img {
+      max-width: 200%;
+      height: auto;
+    }
+    .event-image h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="quienesSomos" role="button" data-bs-toggle="dropdown">Quienes Somos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="premios.html">Premios</a></li>
+              <li><a class="dropdown-item" href="equipo.html">Equipo</a></li>
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="cocina.html">Cocina</a></li>
+              <li><a class="dropdown-item" href="mision_vision.html">Misión y Visión</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="queOfrecemos" role="button" data-bs-toggle="dropdown">Qué Ofrecemos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="platillos.html">Platillos</a></li>
+              <li><a class="dropdown-item" href="montajes.html">Montajes</a></li>
+              <li><a class="dropdown-item" href="lugares.html">Lugares</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="galeriadefotos.html">Galería de Fotos</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="mejores_lugares.html">Los Mejores Lugares</a></li>
+          <li class="nav-item"><a class="nav-link" href="nuestros_clientes.html">Nuestros Clientes</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="paquetes" role="button" data-bs-toggle="dropdown">Paquetes</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="paquete_basico.html">Básicos</a></li>
+              <li><a class="dropdown-item" href="paquete_infantil.html">Infantiles</a></li>
+              <li><a class="dropdown-item" href="paquete_boda.html">Boda</a></li>
+              <li><a class="dropdown-item" href="paquete_eventos.html">Eventos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="event-image">
+    <h1>Salón de Eventos</h1>
+    <img src="img/lugar1.jpeg" alt="Salón de Eventos">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

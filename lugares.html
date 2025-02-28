@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares - Salón de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 800px;
+    }
+    .lugar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Qué Ofrecemos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="lugares.html">Lugares</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Nuestros Espacios para Eventos</h1>
+    <p>En <strong>Salón de Eventos El Ing</strong>, ofrecemos una variedad de espacios diseñados para adaptarse a cualquier tipo de celebración. Contamos con opciones elegantes y versátiles para garantizar el éxito de tu evento.</p>
+    
+    <div class="row">
+      <div class="col-md-6 lugar">
+        <img src="img/lugar1.jpeg" alt="Salón Principal">
+        <h4 class="text-center">Salón Principal</h4>
+        <p>Un amplio y elegante salón con capacidad para grandes eventos, decorado con iluminación moderna y detalles exclusivos.</p>
+      </div>
+      <div class="col-md-6 lugar">
+        <img src="img/lugar2.jpeg" alt="Jardín al Aire Libre">
+        <h4 class="text-center">Jardín al Aire Libre</h4>
+        <p>Un espacio natural rodeado de áreas verdes, ideal para bodas, recepciones y eventos al aire libre.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("¡Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

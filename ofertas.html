@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas - Salón de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 800px;
+    }
+    .oferta {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Qué Ofrecemos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ofertas.html">Ofertas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Nuestras Ofertas</h1>
+    <p>En <strong>Salón de Eventos El Ing</strong>, te ofrecemos promociones especiales para que tu evento sea inolvidable a precios accesibles.</p>
+    
+    <div class="oferta">
+      <h4>Descuento en Bodas</h4>
+      <p>Reserva tu boda con nosotros y obtén un <strong>15% de descuento</strong> en el paquete completo.</p>
+    </div>
+    
+    <div class="oferta">
+      <h4>Promoción en Fiestas Infantiles</h4>
+      <p>Incluimos decoración temática y animadores sin costo adicional en paquetes seleccionados.</p>
+    </div>
+    
+    <div class="oferta">
+      <h4>Descuento Corporativo</h4>
+      <p>Para eventos empresariales, ofrecemos precios especiales y coffee break gratis en contrataciones grupales.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("¡Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

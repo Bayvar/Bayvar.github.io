@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misión y Visión - Salón de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Quienes Somos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="mision_vision.html">Misión y Visión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Nuestra Misión y Visión</h1>
+    
+    <h2>Misión</h2>
+    <p>En <strong>Salón de Eventos El Ing</strong>, nuestra misión es ofrecer experiencias inolvidables a nuestros clientes, proporcionando servicios de alta calidad en la planificación y ejecución de eventos. Nos comprometemos a brindar excelencia, creatividad y atención personalizada para cada celebración.</p>
+    
+    <h2>Visión</h2>
+    <p>Nuestra visión es convertirnos en el salón de eventos más reconocido de la región, destacándonos por nuestra innovación, servicio excepcional y compromiso con la satisfacción del cliente. Aspiramos a ser líderes en la industria de eventos, ofreciendo espacios únicos y servicios personalizados.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("¡Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>

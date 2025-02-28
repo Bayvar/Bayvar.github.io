@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premios - Salón de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS para títulos, contenido y fondo de pantalla -->
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Eventos El Ing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Quienes Somos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="premios.html">Premios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Premios y Reconocimientos</h1>
+    <p>En <strong>Eventos El Ing</strong>, nos enorgullece haber sido galardonados con múltiples premios por nuestra excelencia en la organización de eventos. Gracias a la confianza de nuestros clientes y el compromiso de nuestro equipo, hemos sido reconocidos en diversas categorías.</p>
+    
+    <h2>Premios Recibidos</h2>
+    <ul>
+      <li><strong>Mejor Salón de Eventos 2022</strong> - Otorgado por la Asociación de Eventos y Banquetes.</li>
+      <li><strong>Excelencia en Servicio al Cliente 2021</strong> - Reconocimiento por nuestra calidad y atención personalizada.</li>
+      <li><strong>Innovación en Decoración 2020</strong> - Premio por nuestras creativas temáticas y montajes únicos.</li>
+    </ul>
+    
+    <h2>Compromiso con la Calidad</h2>
+    <p>Estos premios reflejan nuestro compromiso con la excelencia, la creatividad y la satisfacción de nuestros clientes. Seguiremos trabajando para ofrecer experiencias inolvidables en cada evento.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Scripts de JavaScript agregados -->
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("El campo de correo electrónico debe ser llenado.");
+        return false;
+      }
+    }
+
+    function showAlert() {
+      alert("¡Botón clicado!");
+    }
+
+    function changeContent() {
+      document.getElementById("demo").innerHTML = "¡El contenido ha sido cambiado!";
+    }
+
+    function mouseOver() {
+      document.getElementById("hoverText").style.color = "red";
+    }
+
+    function mouseOut() {
+      document.getElementById("hoverText").style.color = "black";
+    }
+  </script>
+</body>
+</html>
